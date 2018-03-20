@@ -13,6 +13,7 @@ def fetch_notes():
 	_file.close()
     return final_notes
 
+
 @bp.route('/')
 def show():
     return render_template('index.html', notes=fetch_notes())
